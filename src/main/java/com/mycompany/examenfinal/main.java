@@ -9,8 +9,8 @@ public class main {
         connMongo = new conexionDB();
         connMongo.setBD();
 
-        //equipos formEquipos = new equipos();
-        //formEquipos.setVisible(true);
+       maquinaria formMaquinaria = new maquinaria();
+        formMaquinaria.setVisible(true);
 
     }
 

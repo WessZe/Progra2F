@@ -36,10 +36,9 @@ public class conexionDB {
         return dataBaseSelect;
     }
 
-
-    public boolean insertDocument(MongoCollection<Document> collection, Document newEquipo) {
+    public boolean insertDocument(MongoCollection<Document> collection, Document newMaquinaria) {
         try {
-            collection.insertOne(newEquipo);
+            collection.insertOne(newMaquinaria);
             JOptionPane.showMessageDialog(null, "Registro creado con exito!", "Importante!", JOptionPane.INFORMATION_MESSAGE);
             return true;
         } catch (MongoException error) {
@@ -47,6 +46,7 @@ public class conexionDB {
             return false;
         }
     }
+
     public FindIterable<Document> getDocuments(MongoCollection<Document> collection) {
         FindIterable<Document> iterable = null;
         try {
@@ -59,9 +59,9 @@ public class conexionDB {
 
     public boolean deleteDocuments(MongoCollection<Document> collection, String id) {
         try {
-            // delete one document
+
             Bson filter = eq("_id", new ObjectId(id));
-            //     Document doc = this.Equipos.findOneAndDelete(filter);
+
             DeleteResult result = collection.deleteOne(filter);
             return result.getDeletedCount() > 0 ? true : false;
         } catch (MongoException error) {
