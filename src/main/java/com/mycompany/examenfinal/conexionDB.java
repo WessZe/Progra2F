@@ -26,7 +26,7 @@ public class conexionDB {
         }
     }
 
-    public void setBD() {
+    public void setDB() {
         dataBaseSelect = conn.getDatabase("Produccion");
         System.out.println("DB Selecionada: " + dataBaseSelect.toString());
     }

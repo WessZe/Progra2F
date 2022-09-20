@@ -7,7 +7,7 @@ public class main {
     public static void main(String[] args) {
 
         connMongo = new conexionDB();
-        connMongo.setBD();
+        connMongo.setDB();
 
         maquinaria formMaquinaria = new maquinaria();
         formMaquinaria.setVisible(true);

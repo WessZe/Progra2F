@@ -104,7 +104,7 @@ public class maquinaria extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         tblMaquinaria = new javax.swing.JTable();
         btnInsertar = new javax.swing.JButton();
-        btnModificar = new javax.swing.JButton();
+        btnActualizar = new javax.swing.JButton();
         btnEliminar = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
 
@@ -154,13 +154,13 @@ public class maquinaria extends javax.swing.JFrame {
         });
         getContentPane().add(btnInsertar, new org.netbeans.lib.awtextra.AbsoluteConstraints(269, 57, 100, -1));
 
-        btnModificar.setText("Actualizar");
-        btnModificar.addActionListener(new java.awt.event.ActionListener() {
+        btnActualizar.setText("Actualizar");
+        btnActualizar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnModificarActionPerformed(evt);
+                btnActualizarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(269, 98, 100, -1));
+        getContentPane().add(btnActualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(269, 98, 100, -1));
 
         btnEliminar.setText("Eliminar");
         btnEliminar.addActionListener(new java.awt.event.ActionListener() {
@@ -183,7 +183,7 @@ public class maquinaria extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btnInsertarActionPerformed
 
-    private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
+    private void btnActualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarActionPerformed
         // TODO add your handling code here:
         int res = JOptionPane.showOptionDialog(new JFrame(), "Esta seguro que desea actualizar el registro seleccionado?",
                 "Confirmacion de actualizacion",
@@ -215,7 +215,7 @@ public class maquinaria extends javax.swing.JFrame {
         }
 
 
-    }//GEN-LAST:event_btnModificarActionPerformed
+    }//GEN-LAST:event_btnActualizarActionPerformed
 
     private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
         // TODO add your handling code here:
@@ -286,9 +286,9 @@ public class maquinaria extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnActualizar;
     private javax.swing.JButton btnEliminar;
     private javax.swing.JButton btnInsertar;
-    private javax.swing.JButton btnModificar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
