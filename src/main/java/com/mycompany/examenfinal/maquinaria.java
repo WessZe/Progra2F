@@ -8,6 +8,8 @@ import org.bson.types.ObjectId;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
+
+
 public class maquinaria extends javax.swing.JFrame {
 
     MongoCollection<Document> Maquinaria;
@@ -298,4 +300,6 @@ public class maquinaria extends javax.swing.JFrame {
     private javax.swing.JTextField txtModelo;
     private javax.swing.JTextField txtVidaU;
     // End of variables declaration//GEN-END:variables
+
+   
 }
