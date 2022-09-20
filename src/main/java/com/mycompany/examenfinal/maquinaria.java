@@ -154,7 +154,7 @@ public class maquinaria extends javax.swing.JFrame {
         });
         getContentPane().add(btnInsertar, new org.netbeans.lib.awtextra.AbsoluteConstraints(269, 57, 100, -1));
 
-        btnModificar.setText("Modificar");
+        btnModificar.setText("Actualizar");
         btnModificar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnModificarActionPerformed(evt);
